@@ -1,7 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: yellow;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -10,15 +28,77 @@ header {
   text-align: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 14px 89px 13px 89px;
+  margin: 0;
+  position: relative;
 }
 header h1 {
   font-weight: 400;
   font-size: 30px;
 }
 
-body {
-  margin: 0px;
-  background-color: yellow;
+main .city {
+  display: flex;
+  background-color: #f3f3f3;
+  gap: 1rem;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.explorer {
+  text-align: center;
+}
+.explorer h2 {
+  margin-top: 2rem;
+  font-size: 24px;
+}
+.explorer p {
+  font-size: 18px;
+  font-weight: 300;
+}
+.explorer button {
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 1rem;
+}
+
+.tuto {
+  counter-reset: steps;
+}
+.tuto ol {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.tuto li {
+  position: relative;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.tuto li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: #9356DC;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0.5rem;
+  left: -1rem;
+}
+.tuto i.fas {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
