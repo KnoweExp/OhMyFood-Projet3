@@ -1,0 +1,23 @@
+@use "../utils/box-shadow.scss";
+
+.explorer {
+    text-align: center;
+    h2 {
+     margin-top: 2rem;
+     font-size: 24px;
+    }
+    p {
+     font-size: 18px;
+     font-weight: 300;
+    }
+    button {
+     color: white;
+     font-size: 16px;
+     border: none;
+     padding: 1rem 2rem;
+     border-radius: 2rem;
+     background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+     @include box-shadow.shadow;
+     margin-top: 1rem;
+    }
+ }
