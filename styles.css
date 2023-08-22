@@ -190,13 +190,34 @@ footer h2 {
   object-fit: cover;
 }
 
-.resto-main {
+.resto__main {
   position: relative;
-  background: green;
+  background: white;
+  border-radius: 2rem;
 }
-.resto-main h2 {
+.resto__main h2 {
   font-family: "shrikhand", "sans-serif";
+  padding: 32px 1rem 3rem;
+  margin-top: -30px;
+}
+
+.menus-grid {
+  background: blue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 1000px) {
+  .menus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.menus-grid .menu-item {
+  display: flex;
   padding: 1rem;
+}
+.menu-item__check .menus-grid > * {
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=styles.css.map */
