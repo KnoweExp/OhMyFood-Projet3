@@ -183,4 +183,20 @@ footer h2 {
   font-weight: 400;
 }
 
+.banner img {
+  display: block;
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+}
+
+.resto-main {
+  position: relative;
+  background: green;
+}
+.resto-main h2 {
+  font-family: "shrikhand", "sans-serif";
+  padding: 1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
