@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    padding: 22px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    background-color: #353535;
+    color: white;
+    h2 {
+        font-family: "shrikhand", "sans-serif";
+        font-weight: 400;
+    }
+}

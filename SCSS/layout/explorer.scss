@@ -16,7 +16,7 @@
      border: none;
      padding: 1rem 2rem;
      border-radius: 2rem;
-     background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+     background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%)); // a remplacer par une mixin
      @include box-shadow.shadow;
      margin-top: 1rem;
     }
