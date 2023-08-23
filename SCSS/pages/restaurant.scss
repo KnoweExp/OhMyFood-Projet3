@@ -1,5 +1,6 @@
 @use "../utils/box-shadow.scss";
 @use "../utils/animation.scss";
+@use "../utils/mixins.scss";
 
 #page-resto {
     background-color: #f6f6f6;
@@ -37,7 +38,20 @@
     @media (max-width: 1000px) {
         grid-template-columns: 1fr;
       }
-    
+      h3 {
+        text-transform: uppercase;
+        font-weight: 300;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 1.5rem;
+            left: 0;
+            height: 0.25rem;
+            width: 3rem;
+            background-color: #99E2D0;
+        }
+      }
       .menu-group {
           overflow: hidden;
           .menu-item {
@@ -45,8 +59,9 @@
               display: flex;
               background-color: white;
               overflow: hidden;
-              margin: 0.5rem;
-              @include box-shadow.shadow;
+              margin: 1rem;
+              /* @include box-shadow.shadow; */
+              box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
               .menu-item__price {
                   margin-left: auto;
                   font-weight: 900;
@@ -69,11 +84,12 @@
                     place-items: center;
                     flex-shrink: 0;
                     border-radius: 0 1rem 1rem 0;
-                    background-color: aqua;
+                    background-color: #99E2D0;
                     margin-right: -4rem;
                     width: 4rem;
                     transition: margin-right 0.6s;
                     i {
+                        color: #99E2D0;
                         display: grid;
                         place-items: center;
                         background: white;
@@ -83,6 +99,7 @@
                     }
                 }
                 &:hover {
+                    cursor: pointer;
                     .menu-item__check {
                         margin-right: 0;
                     }
@@ -95,4 +112,13 @@
           }
     }
     
+}
+
+section.order {
+    height: 30vh;
+    display: grid;
+    place-items: center;
+    button {
+        @include mixins.base-button;
+    }
 }

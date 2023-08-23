@@ -63,6 +63,11 @@ header h1 {
   background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   margin-top: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.explorer button:hover {
+  opacity: 0.9;
 }
 
 .tuto {
@@ -223,6 +228,20 @@ footer h2 {
     grid-template-columns: 1fr;
   }
 }
+.menus-grid h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+}
+.menus-grid h3::after {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  height: 0.25rem;
+  width: 3rem;
+  background-color: #99E2D0;
+}
 .menus-grid .menu-group {
   overflow: hidden;
 }
@@ -231,8 +250,9 @@ footer h2 {
   display: flex;
   background-color: white;
   overflow: hidden;
-  margin: 0.5rem;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  margin: 1rem;
+  /* @include box-shadow.shadow; */
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
 }
 .menus-grid .menu-group .menu-item .menu-item__price {
   margin-left: auto;
@@ -256,18 +276,22 @@ footer h2 {
   place-items: center;
   flex-shrink: 0;
   border-radius: 0 1rem 1rem 0;
-  background-color: aqua;
+  background-color: #99E2D0;
   margin-right: -4rem;
   width: 4rem;
   transition: margin-right 0.6s;
 }
 .menus-grid .menu-group .menu-item .menu-item__check i {
+  color: #99E2D0;
   display: grid;
   place-items: center;
   background: white;
   aspect-ratio: 1;
   width: 2rem;
   border-radius: 1rem;
+}
+.menus-grid .menu-group .menu-item:hover {
+  cursor: pointer;
 }
 .menus-grid .menu-group .menu-item:hover .menu-item__check {
   margin-right: 0;
@@ -282,6 +306,26 @@ footer h2 {
   100% {
     transform: rotate(0);
   }
+}
+
+section.order {
+  height: 30vh;
+  display: grid;
+  place-items: center;
+}
+section.order button {
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 1rem;
+  cursor: pointer;
+}
+section.order button:hover {
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=styles.css.map */
