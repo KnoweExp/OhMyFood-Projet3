@@ -196,6 +196,21 @@ footer h2 {
 #page-resto {
   background-color: #f6f6f6;
 }
+#page-resto header::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  content: "\f060";
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
 
 .banner img {
   display: block;

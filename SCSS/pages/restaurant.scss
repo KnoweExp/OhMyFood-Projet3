@@ -4,6 +4,15 @@
 
 #page-resto {
     background-color: #f6f6f6;
+    header::before {
+        @include mixins.font-awesome;
+        content: "\f060";
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }
 }
 
 .banner img {
