@@ -1,4 +1,13 @@
 footer {
+    @media (min-width: 1000px) {
+        display: flex;
+      /*   justify-content: flex-end;
+        align-items: flex-end; */
+        flex-direction: row-reverse;
+        gap: 16px;
+        margin-left: auto;
+    }
+    
     display: flex;
     padding: 22px 25px;
     flex-direction: column;
@@ -9,5 +18,9 @@ footer {
     h2 {
         font-family: "shrikhand", "sans-serif";
         font-weight: 400;
+        @media (min-width: 1000px) {
+            /* align-self: flex-end; /* Alignement à la fin (droite) du footer */
+        /* margin-left: auto; */ 
+        }
     }
 }
