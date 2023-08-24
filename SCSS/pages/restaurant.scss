@@ -51,6 +51,7 @@
         text-transform: uppercase;
         font-weight: 300;
         position: relative;
+        margin-bottom: 1rem;
         &::after {
             content: "";
             position: absolute;
@@ -63,12 +64,21 @@
       }
       .menu-group {
           overflow: hidden;
+
+          
           .menu-item {
+            @for $i from 2 through 4 {
+                &:nth-child(#{$i}){
+                        animation-delay: 100ms * $i; 
+                    }
+                }
               border-radius: 1rem;
               display: flex;
               background-color: white;
               overflow: hidden;
               margin: 1rem;
+              animation: appear 0.7s;
+              /* animation-fill-mode: both; */
               /* @include box-shadow.shadow; */
               box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
               .menu-item__price {

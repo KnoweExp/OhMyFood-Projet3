@@ -193,6 +193,14 @@ footer h2 {
   font-weight: 400;
 }
 
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 #page-resto {
   background-color: #f6f6f6;
 }
@@ -247,6 +255,7 @@ footer h2 {
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
+  margin-bottom: 1rem;
 }
 .menus-grid h3::after {
   content: "";
@@ -266,8 +275,19 @@ footer h2 {
   background-color: white;
   overflow: hidden;
   margin: 1rem;
+  animation: appear 0.7s;
+  /* animation-fill-mode: both; */
   /* @include box-shadow.shadow; */
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+}
+.menus-grid .menu-group .menu-item:nth-child(2) {
+  animation-delay: 200ms;
+}
+.menus-grid .menu-group .menu-item:nth-child(3) {
+  animation-delay: 300ms;
+}
+.menus-grid .menu-group .menu-item:nth-child(4) {
+  animation-delay: 400ms;
 }
 .menus-grid .menu-group .menu-item .menu-item__price {
   margin-left: auto;
