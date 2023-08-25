@@ -143,6 +143,11 @@ header h1 {
   margin-left: 0.5rem; */
   padding-top: 3rem;
 }
+@media (min-width: 1000px) {
+  #homepage .menus h2 {
+    margin: 0 0 2rem 0;
+  }
+}
 #homepage .menus .menu__cards {
   display: flex;
   gap: 2rem;
@@ -170,9 +175,9 @@ header h1 {
   right: 1rem;
   top: 1rem;
 }
-@media (min-width: 1000px) {
+@media (min-width: 725px) {
   #homepage .menus .card {
-    width: 75vh;
+    width: 45vh;
   }
 }
 #homepage .menus .card__image {
@@ -181,16 +186,16 @@ header h1 {
   background-size: cover;
 }
 #homepage .menus .card__image-1 {
-  background-image: url("/assets/menu-1.jpg");
+  background-image: url("./assets/menu-1.jpg");
 }
 #homepage .menus .card__image-2 {
-  background-image: url("/assets/menu-2.jpg");
+  background-image: url("./assets/menu-2.jpg");
 }
 #homepage .menus .card__image-3 {
-  background-image: url("/assets/menu-3.jpg");
+  background-image: url("./assets/menu-3.jpg");
 }
 #homepage .menus .card__image-4 {
-  background-image: url("/assets/menu-4.jpg");
+  background-image: url("./assets/menu-4.jpg");
 }
 #homepage .menus .card__description {
   position: relative;
@@ -204,21 +209,37 @@ header h1 {
   margin-top: -0.5rem;
 }
 #homepage .menus .card__description i {
-  font-size: 2rem;
+  /* font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%); */
   position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 2rem;
 }
-#homepage .menus .card__description .fas {
-  color: transparent;
+#homepage .menus .card__description i.far {
+  color: #000; /* Couleur par défaut pour le cœur vide */
+  z-index: 1; /* Assurez-vous qu'il est sous le cœur plein */
+}
+#homepage .menus .card__description i.fas {
+  /* color: transparent;
   background-image: linear-gradient(45deg, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-backdrop-filter: text;
   opacity: 0;
-  transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out; */
+  color: transparent;
+  z-index: 2; /* Le cœur plein doit être au-dessus du cœur vide */
+  background-image: linear-gradient(45deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
 }
-#homepage .menus .card__description .fas:hover {
+#homepage .menus .card__description i.fas:hover {
   opacity: 1;
 }
 
