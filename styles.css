@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
@@ -209,11 +208,6 @@ header h1 {
   margin-top: -0.5rem;
 }
 #homepage .menus .card__description i {
-  /* font-size: 2rem;
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%); */
   position: absolute;
   right: 1rem;
   top: 50%;
@@ -221,18 +215,12 @@ header h1 {
   font-size: 2rem;
 }
 #homepage .menus .card__description i.far {
-  color: #000; /* Couleur par défaut pour le cœur vide */
-  z-index: 1; /* Assurez-vous qu'il est sous le cœur plein */
+  color: #000;
+  z-index: 1;
 }
 #homepage .menus .card__description i.fas {
-  /* color: transparent;
-  background-image: linear-gradient(45deg, #9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-backdrop-filter: text;
-  opacity: 0;
-  transition: all 150ms ease-in-out; */
   color: transparent;
-  z-index: 2; /* Le cœur plein doit être au-dessus du cœur vide */
+  z-index: 2;
   background-image: linear-gradient(45deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
@@ -255,11 +243,30 @@ footer {
 @media (min-width: 1000px) {
   footer {
     display: flex;
-    /*   justify-content: flex-end;
-      align-items: flex-end; */
-    flex-direction: row-reverse;
     gap: 16px;
+    margin-right: auto;
+    flex-direction: row;
+    padding: 2.5rem;
+    align-items: center;
+  }
+  footer .link {
+    gap: 32px;
+    display: flex;
     margin-left: auto;
+    flex-direction: row;
+  }
+  footer .link .left {
+    display: flex;
+    font-weight: 500;
+    gap: 16px;
+  }
+  footer .link .right {
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    gap: 16px;
+    line-height: normal;
   }
 }
 footer h2 {
@@ -268,17 +275,19 @@ footer h2 {
 }
 @media (min-width: 1000px) {
   footer h2 {
-    /* align-self: flex-end; /* Alignement à la fin (droite) du footer */
-    /* margin-left: auto; */
+    order: 1;
+    margin-left: 50px;
   }
 }
 
 @keyframes appear {
   0% {
     transform: translateY(50%);
+    opacity: 0;
   }
   100% {
-    transform: scale(0);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 #page-resto {
@@ -324,8 +333,7 @@ footer h2 {
 
 .menus-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 1000px) {
   .menus-grid {
@@ -336,7 +344,7 @@ footer h2 {
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .menus-grid h3::after {
   content: "";
@@ -425,7 +433,7 @@ footer h2 {
 }
 
 section.order {
-  height: 30vh;
+  height: 30vw;
   display: grid;
   place-items: center;
 }
