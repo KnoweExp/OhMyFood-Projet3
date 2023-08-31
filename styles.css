@@ -176,7 +176,7 @@ header h1 {
 }
 @media (min-width: 725px) {
   #homepage .menus .card {
-    width: 45vh;
+    width: 45vw;
   }
 }
 #homepage .menus .card__image {
