@@ -30,15 +30,6 @@
   }
   
   
-  #content {
-    display: none;
-  }
-  
-  
-  .loader-container.animation-done + #content {
-    display: block;
-  }
-  
   @keyframes fadeOut {
     to {
         opacity: 0;

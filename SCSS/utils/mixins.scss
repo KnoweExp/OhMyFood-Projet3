@@ -26,9 +26,9 @@
 }
 
 @mixin coeur-animation {
-    width: 2rem; // Assurez-vous que la largeur est correcte pour votre icône.
-    height: 2rem; // Assurez-vous que la hauteur est correcte pour votre icône.
-    position: absolute; // Pour le positionner par rapport à son conteneur parent
+    width: 2rem; 
+    height: 2rem;
+    position: absolute;
   top: 1rem;  // Ajustez cette valeur pour le déplacer verticalement
   right: 10px;  // Ajustez cette valeur pour le déplacer horizontalement
   

@@ -41,7 +41,9 @@
 
 .main-restaurant {
     padding: 0 1rem;
-    // background-color: #f6f6f6;
+    @media (min-width: 1000px) { //modifier taille media width
+        padding: 0 10rem;
+      }
 }
 
 .menus-grid {
@@ -139,7 +141,7 @@
 }
 
 section.order {
-    height: 30vw;
+    padding-bottom: 50px;
     display: grid;
     place-items: center;
     button {

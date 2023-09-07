@@ -374,6 +374,11 @@ footer h2 {
 .main-restaurant {
   padding: 0 1rem;
 }
+@media (min-width: 1000px) {
+  .main-restaurant {
+    padding: 0 10rem;
+  }
+}
 
 .menus-grid {
   display: grid;
@@ -477,7 +482,7 @@ footer h2 {
 }
 
 section.order {
-  height: 30vw;
+  padding-bottom: 50px;
   display: grid;
   place-items: center;
 }
@@ -529,14 +534,6 @@ section.order button:hover {
     transform: rotate(360deg);
   }
 }
-#content {
-  display: none;
-}
-
-.loader-container.animation-done + #content {
-  display: block;
-}
-
 @keyframes fadeOut {
   to {
     opacity: 0;
