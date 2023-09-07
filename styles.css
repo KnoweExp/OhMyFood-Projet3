@@ -201,34 +201,36 @@ header h1 {
   border-radius: 0px 0px 15px 15px;
   background-color: white;
   padding: 1rem 1rem 0.5px 0.5px;
+  /* i {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+  }
+
+  i.far {
+      color: #000;
+      z-index: 1;
+  }
+
+  i.fas {
+      color: transparent; 
+      z-index: 2;
+      background-image: linear-gradient(45deg, #9356DC, #FF79DA);
+      -webkit-background-clip: text;
+      background-clip: text;
+      opacity: 0;
+      transition: opacity 150ms ease-in-out;
+  }
+  i.fas:hover {
+      opacity: 1;
+  } */
 }
 #homepage .menus .card__description h3,
 #homepage .menus .card__description p {
   padding: 0.3rem 0.3rem 0.3rem 1rem;
   margin-top: -0.5rem;
-}
-#homepage .menus .card__description i {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-}
-#homepage .menus .card__description i.far {
-  color: #000;
-  z-index: 1;
-}
-#homepage .menus .card__description i.fas {
-  color: transparent;
-  z-index: 2;
-  background-image: linear-gradient(45deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
-}
-#homepage .menus .card__description i.fas:hover {
-  opacity: 1;
 }
 
 footer {
@@ -310,12 +312,11 @@ footer h2 {
 }
 
 .ma-classe-coeur {
-  position: relative;
   width: 2rem;
   height: 2rem;
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: 10px;
 }
 .ma-classe-coeur i {
   position: absolute;
@@ -340,10 +341,13 @@ footer h2 {
   background-clip: text;
   opacity: 0;
 }
-.ma-classe-coeur:hover i.far {
+.ma-classe-coeur .heart-checkbox {
+  display: none;
+}
+.ma-classe-coeur .heart-checkbox:checked + .ma-classe-coeur i.far {
   opacity: 0;
 }
-.ma-classe-coeur:hover i.fas {
+.ma-classe-coeur .heart-checkbox:checked + .ma-classe-coeur i.fas {
   opacity: 1;
 }
 
@@ -360,8 +364,10 @@ footer h2 {
   border-radius: 2rem;
 }
 .resto__title h2 {
+  display: flex;
+  justify-content: center;
   font-family: "shrikhand", "sans-serif";
-  padding: 32px 1rem 3rem;
+  padding: 32px 0 3rem;
   margin-top: -30px;
 }
 
@@ -500,8 +506,8 @@ section.order button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
-  animation: fadeOut 2s ease-in-out 1s forwards;
+  z-index: 1;
+  animation: fadeOut 100ms ease-in-out 1s forwards;
 }
 
 .loader {

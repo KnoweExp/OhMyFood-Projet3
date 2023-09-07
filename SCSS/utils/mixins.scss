@@ -26,12 +26,11 @@
 }
 
 @mixin coeur-animation {
-    position: relative;
     width: 2rem; // Assurez-vous que la largeur est correcte pour votre icône.
     height: 2rem; // Assurez-vous que la hauteur est correcte pour votre icône.
     position: absolute; // Pour le positionner par rapport à son conteneur parent
   top: 1rem;  // Ajustez cette valeur pour le déplacer verticalement
-  right: 1rem;  // Ajustez cette valeur pour le déplacer horizontalement
+  right: 10px;  // Ajustez cette valeur pour le déplacer horizontalement
   
     i {
       position: absolute;
@@ -58,13 +57,18 @@
       background-clip: text;
       opacity: 0;
     }
-  
-    &:hover i.far {
-      opacity: 0;
-    }
-  
-    &:hover i.fas {
-      opacity: 1;
+
+    .heart-checkbox {
+      display: none; // Cachez la checkbox
+    
+      // Quand la checkbox est cochée
+      &:checked + .ma-classe-coeur i.far {
+        opacity: 0;
+      }
+    
+      &:checked + .ma-classe-coeur i.fas {
+        opacity: 1;
+      }
     }
   }
   

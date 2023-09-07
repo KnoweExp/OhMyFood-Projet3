@@ -31,8 +31,10 @@
     background-color: #f6f6f6;
     border-radius: 2rem;
     h2 {
+        display: flex;
+        justify-content: center;
         font-family: "shrikhand","sans-serif";
-        padding: 32px 1rem 3rem;
+        padding: 32px 0 3rem;
         margin-top:-30px;
     }
 }
