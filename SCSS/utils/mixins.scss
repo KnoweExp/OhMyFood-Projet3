@@ -25,12 +25,12 @@
     font-weight: 800;
 }
 
-@mixin coeur-animation {
+@mixin coeur-animation ($top: 10px, $right: 13px){
     width: 2rem; 
     height: 2rem;
     position: absolute;
-  top: 1rem;  // Ajustez cette valeur pour le déplacer verticalement
-  right: 10px;  // Ajustez cette valeur pour le déplacer horizontalement
+    top: $top;  // Ajustez cette valeur pour le déplacer verticalement
+    right: $right;  // Ajustez cette valeur pour le déplacer horizontalement
   
     i {
       position: absolute;

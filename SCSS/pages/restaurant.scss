@@ -15,8 +15,21 @@
     }
 }
 
+
 .ma-classe-coeur {
     @include mixins.coeur-animation;
+  }
+
+  .ma-classe-coeur-2 {
+    @include mixins.coeur-animation(1rem, 0);
+}
+
+  .titre-container {
+    display: block;
+  }
+
+  .titre-container i {
+    right: auto;
   }
 
 .banner img {
@@ -37,6 +50,8 @@
         padding: 32px 0 3rem;
         margin-top:-30px;
     }
+    
+    
 }
 
 .main-restaurant {

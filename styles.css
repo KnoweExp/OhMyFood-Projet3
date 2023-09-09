@@ -133,6 +133,7 @@ header h1 {
 #homepage .menus {
   background-color: #f6f6f6;
   padding: 0 2rem 2rem;
+  text-align: left;
 }
 #homepage .menus h2 {
   margin: 0 0 2rem 0.5rem;
@@ -197,31 +198,6 @@ header h1 {
   border-radius: 0px 0px 15px 15px;
   background-color: white;
   padding: 1rem 1rem 0.5px 0.5px;
-  /* i {
-      position: absolute;
-      right: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 2rem;
-  }
-
-  i.far {
-      color: #000;
-      z-index: 1;
-  }
-
-  i.fas {
-      color: transparent; 
-      z-index: 2;
-      background-image: linear-gradient(45deg, #9356DC, #FF79DA);
-      -webkit-background-clip: text;
-      background-clip: text;
-      opacity: 0;
-      transition: opacity 150ms ease-in-out;
-  }
-  i.fas:hover {
-      opacity: 1;
-  } */
 }
 #homepage .menus .card__description h3,
 #homepage .menus .card__description p {
@@ -311,8 +287,8 @@ footer h2 {
   width: 2rem;
   height: 2rem;
   position: absolute;
-  top: 1rem;
-  right: 10px;
+  top: 10px;
+  right: 13px;
 }
 .ma-classe-coeur i {
   position: absolute;
@@ -345,6 +321,54 @@ footer h2 {
 }
 .ma-classe-coeur .heart-checkbox:checked + .ma-classe-coeur i.fas {
   opacity: 1;
+}
+
+.ma-classe-coeur-2 {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+.ma-classe-coeur-2 i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 2rem;
+  transition: opacity 150ms ease-in-out;
+}
+.ma-classe-coeur-2 i.far {
+  color: #000;
+  z-index: 1;
+  opacity: 1;
+}
+.ma-classe-coeur-2 i.fas {
+  color: transparent;
+  z-index: 2;
+  background-image: linear-gradient(45deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+}
+.ma-classe-coeur-2 .heart-checkbox {
+  display: none;
+}
+.ma-classe-coeur-2 .heart-checkbox:checked + .ma-classe-coeur i.far {
+  opacity: 0;
+}
+.ma-classe-coeur-2 .heart-checkbox:checked + .ma-classe-coeur i.fas {
+  opacity: 1;
+}
+
+.titre-container {
+  display: block;
+}
+
+.titre-container i {
+  right: auto;
 }
 
 .banner img {
