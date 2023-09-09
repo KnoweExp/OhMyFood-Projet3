@@ -21,7 +21,7 @@
   }
 
 .ma-classe-coeur-2 {
-    @include mixins.coeur-animation(1rem, 10rem);
+    @include mixins.coeur-animation(1rem, 1rem);
 }
 
 .banner img {
