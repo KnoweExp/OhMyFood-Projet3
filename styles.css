@@ -328,7 +328,7 @@ footer h2 {
   height: 2rem;
   position: absolute;
   top: 1rem;
-  right: 0;
+  right: 10rem;
 }
 .ma-classe-coeur-2 i {
   position: absolute;
@@ -361,14 +361,6 @@ footer h2 {
 }
 .ma-classe-coeur-2 .heart-checkbox:checked + .ma-classe-coeur i.fas {
   opacity: 1;
-}
-
-.titre-container {
-  display: block;
-}
-
-.titre-container i {
-  right: auto;
 }
 
 .banner img {
@@ -448,7 +440,6 @@ footer h2 {
   margin: 1rem;
   animation: appear 0.7s;
   animation-fill-mode: forwards;
-  /* @include box-shadow.shadow; */
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
 }
 .menus-grid .menu-group .menu-item .menu-item__price {
