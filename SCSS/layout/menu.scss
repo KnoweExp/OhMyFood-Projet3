@@ -5,6 +5,8 @@
         background-color: #f6f6f6;
         padding: 0 2rem 2rem;
         text-align: left;
+        display: flex;
+        justify-content: center;
         h2 {
             @media (min-width: 1000px) {
                 margin: 0 0 2rem 0;
@@ -41,7 +43,7 @@
     
         .card {
             @media (min-width: 1000px) {
-                width: 45vw;
+                width: 46%;
             }
             
             &__image {

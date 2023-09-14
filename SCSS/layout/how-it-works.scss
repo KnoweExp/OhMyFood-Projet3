@@ -1,6 +1,12 @@
 @use "../utils/box-shadow.scss";
 
+.englobe-how-it-works {
+    display: flex;
+    justify-content: center;
+}
+
 .how-it-works {
+    margin: 0 4em 4rem;
     counter-reset: steps;
     margin-bottom: 4rem;
     h2 {
