@@ -3,7 +3,7 @@
 @use "../utils/mixins.scss";
 
 #page-resto {
-    background-color: #f6f6f6;
+    background-color: #FFFFFF;
     header::before {
         @include mixins.font-awesome;
         content: "\f060";
@@ -15,23 +15,43 @@
     }
 }
 
+.boxed {
+    background-color: #f7f7f7;
+    border-radius: 2rem 2rem 0 0;
+    position: relative;
+    @media (min-width: 1300px) { //modifier taille media width
+        margin: 0 30rem -3rem;
+        position: relative;
+        top: -3rem;
+      }
+      h2 {
+        font-family: "shrikhand","sans-serif";
+        display: flex;
+        justify-content: center;
+        padding: 32px 0 3rem;
+        margin-top:-30px;
+      }
+}
+
 
 .ma-classe-coeur {
     @include mixins.coeur-animation;
   }
 
 .ma-classe-coeur-2 {
-    @include mixins.coeur-animation(1rem, 1rem);
+    
+    @include mixins.coeur-animation(1rem, 2rem);
+    position: relative;
 }
 
 .banner img {
     display: block;
     width: 100%;
-    height: 20vh;
-    object-fit: cover;
+    height: 30vh;
+    object-fit:cover;
 }
 
-.resto__title {
+/* .resto__title {
     position: relative;
     background-color: #f6f6f6;
     border-radius: 2rem;
@@ -42,19 +62,22 @@
         padding: 32px 0 3rem;
         margin-top:-30px;
     }
-}
+} */
 
 .main-restaurant {
     padding: 0 1rem;
-    @media (min-width: 1000px) { //modifier taille media width
-        padding: 0 10rem;
+    @media (min-width: 1300px) { //modifier taille media width
+        /* background-color: #f7f7f7; */
+        border-radius: 2rem 2rem 0 0;
+        /* padding: 0 10rem; */
+        /* position: relative;
+        top: -10rem;
+        margin-top: 10rem; */
       }
 }
 
 .menus-grid {
-    display: grid;
-    margin-bottom: 2rem;
-    @media (max-width: 1000px) {
+    @media (max-width: 1300px) {
         grid-template-columns: 1fr;
       }
       h3 {

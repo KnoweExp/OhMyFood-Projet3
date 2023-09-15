@@ -20,12 +20,18 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.main-container {
-  max-width: 3000px;
+.enlgobe-menu-cars {
+  width: 70%;
+  max-width: 1200px;
+}
+@media (max-width: 1000px) {
+  .enlgobe-menu-cars {
+    width: 100%;
+  }
 }
 
-.enlgobe-menu-cars {
-  margin: 0 15rem 0 15rem;
+.boxed-index {
+  padding: 0 auto 0;
 }
 
 header {
@@ -93,12 +99,13 @@ header h1 {
 }
 
 .englobe-how-it-works {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .how-it-works {
-  margin: 0 4em 4rem;
+  margin: 0;
   counter-reset: steps;
   margin-bottom: 4rem;
 }
@@ -114,6 +121,7 @@ header h1 {
   .how-it-works ol {
     flex-direction: row;
     justify-content: center;
+    margin: 0 4em 4rem;
   }
 }
 .how-it-works li {
@@ -193,7 +201,7 @@ header h1 {
   }
 }
 #homepage .menus .card__image {
-  height: 15rem;
+  height: 13rem;
   border-radius: 15px 15px 0px 0px;
   background-size: cover;
 }
@@ -281,7 +289,7 @@ footer h2 {
   }
 }
 #page-resto {
-  background-color: #f6f6f6;
+  background-color: #FFFFFF;
 }
 #page-resto header::before {
   display: inline-block;
@@ -297,6 +305,26 @@ footer h2 {
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
+}
+
+.boxed {
+  background-color: #f7f7f7;
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+}
+@media (min-width: 1300px) {
+  .boxed {
+    margin: 0 30rem -3rem;
+    position: relative;
+    top: -3rem;
+  }
+}
+.boxed h2 {
+  font-family: "shrikhand", "sans-serif";
+  display: flex;
+  justify-content: center;
+  padding: 32px 0 3rem;
+  margin-top: -30px;
 }
 
 .ma-classe-coeur {
@@ -345,7 +373,8 @@ footer h2 {
   height: 2rem;
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: 2rem;
+  position: relative;
 }
 .ma-classe-coeur-2 i {
   cursor: pointer;
@@ -384,37 +413,37 @@ footer h2 {
 .banner img {
   display: block;
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   object-fit: cover;
 }
 
-.resto__title {
-  position: relative;
-  background-color: #f6f6f6;
-  border-radius: 2rem;
-}
-.resto__title h2 {
-  display: flex;
-  justify-content: center;
-  font-family: "shrikhand", "sans-serif";
-  padding: 32px 0 3rem;
-  margin-top: -30px;
-}
-
+/* .resto__title {
+    position: relative;
+    background-color: #f6f6f6;
+    border-radius: 2rem;
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-family: "shrikhand","sans-serif";
+        padding: 32px 0 3rem;
+        margin-top:-30px;
+    }
+} */
 .main-restaurant {
   padding: 0 1rem;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
   .main-restaurant {
-    padding: 0 10rem;
+    /* background-color: #f7f7f7; */
+    border-radius: 2rem 2rem 0 0;
+    /* padding: 0 10rem; */
+    /* position: relative;
+    top: -10rem;
+    margin-top: 10rem; */
   }
 }
 
-.menus-grid {
-  display: grid;
-  margin-bottom: 2rem;
-}
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   .menus-grid {
     grid-template-columns: 1fr;
   }

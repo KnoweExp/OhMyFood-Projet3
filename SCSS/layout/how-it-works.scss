@@ -1,12 +1,13 @@
 @use "../utils/box-shadow.scss";
 
 .englobe-how-it-works {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .how-it-works {
-    margin: 0 4em 4rem;
+    margin: 0;
     counter-reset: steps;
     margin-bottom: 4rem;
     h2 {
@@ -18,6 +19,7 @@
         @media (min-width: 1000px) {
             flex-direction: row;
             justify-content: center;
+            margin: 0 4em 4rem;
         }
         gap: 2rem;
     }
