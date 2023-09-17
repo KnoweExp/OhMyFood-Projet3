@@ -1,20 +1,23 @@
-@use "../utils/box-shadow.scss";
 @use "../utils/mixins.scss";
 
 .restaurant-explorer {
-    padding-bottom: 4rem;
+    background-color: #f6f6f6;
+    padding: 2rem 2rem 4rem;
     text-align: center;
+
     h2 {
-     margin-top: 2rem;
-     font-size: 24px;
+        margin-top: 0;
+        font-size: 24px;
     }
+
     p {
-     font-size: 18px;
-     font-weight: 300;
+        font-size: 18px;
+        font-weight: 300;
     }
+
     button {
-     @include mixins.base-button;
-     @include box-shadow.shadow;
+        @include mixins.base-button;
+        @include mixins.shadow;
     }
-    
- }
+
+}

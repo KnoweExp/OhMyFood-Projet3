@@ -1,81 +1,82 @@
-@use "../utils/box-shadow.scss";
-
 @mixin base-button {
-    color: white;
-    font-size: 16px;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
-    @include box-shadow.shadow;
-    margin-top: 1rem;
-    cursor: pointer;
-    &:hover {
-        opacity: 0.9;
-    }
+  font-family: "roboto", "sans-serif";
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  @include gradient-button;
+  @include shadow;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 300ms ease-out;
+
+  &:hover {
+    opacity: 0.9;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  }
+}
+
+@mixin shadow {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+@mixin gradient-button {
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 @mixin font-awesome {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 800;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
 }
 
-@mixin coeur-animation ($top: 10px, $right: 13px){
-    width: 2rem; 
-    height: 2rem;
+@mixin coeur-animation ($top: 20px, $right: 13px) {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: $top;
+  right: $right;
+
+  i {
+    cursor: pointer;
     position: absolute;
-    top: $top;
-    right: $right;  
-  
-    i {
-      cursor: pointer;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      font-size: 2rem;
-      transition: opacity 150ms ease-in-out;
-    }
-  
-    i.far {
-      color: #000;
-      z-index: 1;
-      opacity: 1;
-    }
-  
-    i.fas {
-      color: transparent;
-      z-index: 2;
-      background-image: linear-gradient(45deg, #9356DC, #FF79DA);
-      -webkit-background-clip: text;
-      background-clip: text;
-      opacity: 0;
-    }
-
-    .heart-checkbox {
-      display: none; // Cachez la checkbox
-    
-      // Quand la checkbox est cochée
-      &:checked + .ma-classe-coeur i.far {
-        opacity: 0;
-      }
-    
-      &:checked + .ma-classe-coeur i.fas {
-        opacity: 1;
-      }
-    }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 25px;
+    transition: opacity 150ms ease-in-out;
   }
-  
-  
-  
-  
-  
+
+  i.far {
+    color: #000;
+    z-index: 1;
+    opacity: 1;
+  }
+
+  i.fas {
+    color: transparent;
+    z-index: 2;
+    background-image: linear-gradient(45deg, #9356DC, #FF79DA);
+    /* -webkit-background-clip: text; */
+    background-clip: text;
+    opacity: 0;
+  }
 
 
+
+  &:hover i.far {
+    opacity: 0;
+  }
+
+  &:hover i.fas {
+    opacity: 1;
+  }
+
+}

@@ -13,6 +13,7 @@ footer {
                 font-weight: 500;
                 gap: 16px;
             }
+
             .right {
                 display: flex;
                 font-size: 16px;
@@ -21,15 +22,16 @@ footer {
                 gap: 16px;
                 line-height: normal;
             }
+
             gap: 32px;
             display: flex;
             margin-left: auto;
             flex-direction: row;
         }
 
-        
+
     }
-    
+
     display: flex;
     padding: 22px 25px;
     flex-direction: column;
@@ -37,15 +39,16 @@ footer {
     gap: 16px;
     background-color: #353535;
     color: white;
+
     h2 {
         font-family: "shrikhand", "sans-serif";
         font-weight: 400;
-        
+
         @media (min-width: 1000px) {
             order: 1;
             margin-left: 50px;
         }
     }
 
-    
+
 }
