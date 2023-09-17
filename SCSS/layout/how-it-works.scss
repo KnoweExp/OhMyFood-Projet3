@@ -1,6 +1,6 @@
 @use "../utils/mixins.scss";
 
-.englobe-how-it-works {
+.how-it-works-container {
     width: 100%;
 
     @media (min-width: 1000px) {
@@ -11,7 +11,7 @@
 
 }
 
-.how-it-works {
+.how-it-works-section {
     @media (min-width: 1000px) {
         max-width: 70%;
         margin-bottom: 0;

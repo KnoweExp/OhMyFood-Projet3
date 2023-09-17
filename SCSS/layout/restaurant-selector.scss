@@ -1,6 +1,6 @@
 @use "../utils/mixins.scss";
 
-#homepage .menus {
+#homepage .restaurant-cards-section {
     background-color: #f6f6f6;
     padding: 0 2rem 2rem;
     text-align: left;
@@ -16,7 +16,7 @@
         padding-top: 3rem;
     }
 
-    .menu__cards {
+    .restaurant {
         display: flex;
         gap: 2rem;
         flex-direction: column;

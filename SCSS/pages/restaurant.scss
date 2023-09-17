@@ -1,7 +1,7 @@
 @use "../utils/animation.scss";
 @use "../utils/mixins.scss";
 
-#page-resto {
+#restaurants-page {
     background-color: #FFFFFF;
 
     header::before {
@@ -15,7 +15,7 @@
     }
 }
 
-.section-box {
+.container-restaurant {
     background-color: #f7f7f7;
     border-radius: 2rem 2rem 0 0;
     position: relative;
