@@ -1,19 +1,9 @@
 @use "../utils/mixins.scss";
 
-.how-it-works-container {
-    width: 100%;
+
+.how-it-works-section { 
 
     @media (min-width: 1000px) {
-        display: flex;
-        justify-content: center;
-    }
-
-
-}
-
-.how-it-works-section {
-    @media (min-width: 1000px) {
-        max-width: 70%;
         margin-bottom: 0;
     }
 
@@ -22,9 +12,14 @@
     margin-bottom: 4rem;
 
     h2 {
-        padding: 3rem 2rem 1rem;
+        
+        padding: 3rem 1rem 1rem;
         @media (min-width: 1000px) {
             padding: 4rem 0 3rem; 
+            margin: 0 20% 0;
+        }
+        @media (min-width: 2000px) {
+            margin: 0 25% 0; 
         }
     }
 

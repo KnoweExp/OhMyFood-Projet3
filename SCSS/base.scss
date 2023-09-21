@@ -27,11 +27,15 @@ h6 {
     margin: 0;
 }
 
-.restaurant-container {
+.restaurant-container { /* delete */
     width: 70%;
     max-width: 1200px;
 
     @media (max-width: 1000px) {
         width: 100%;
     }
+}
+
+.main-container {
+    
 }

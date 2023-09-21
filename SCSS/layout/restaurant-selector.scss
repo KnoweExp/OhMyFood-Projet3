@@ -2,29 +2,43 @@
 
 #homepage .restaurant-cards-section {
     background-color: #f6f6f6;
-    padding: 0 2rem 2rem;
+    padding: 0 0 2rem;
     text-align: left;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 
     h2 {
         @media (min-width: 1000px) {
             margin: 0 0 2rem 0;
         }
 
-        margin: 0 0 2rem 0.5rem;
+        margin: 0 0 2rem 1rem;
         padding-top: 3rem;
+    }
+
+    .restaurant-cards-title {
+        
+        @media (min-width: 1000px) {
+            margin: 0 20% 0;
+        }
+        @media (min-width: 2000px) {
+            margin: 0 25% 0; 
+        }
     }
 
     .restaurant {
         display: flex;
         gap: 2rem;
         flex-direction: column;
+        margin: 0 15px 0;
+        
 
         @media (min-width: 1000px) {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            margin: 0 15% 0;
         }
 
         .new {
@@ -47,7 +61,8 @@
 
     .card {
         @media (min-width: 1000px) {
-            width: 46%;
+            max-width: 40%;
+            width: 33%;
         }
 
         &__image img {
